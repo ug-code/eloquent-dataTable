@@ -2,6 +2,7 @@
   "name": "ug-code/eloquent-datatable",
   "description": "jQuery DataTables API for elequent",
   "homepage": "https://github.com/ug-code/eloquent-datatable",
+  "type": "library",
   "keywords": [
     "laravel",
     "dataTables",
@@ -20,5 +21,7 @@
     "psr-4": {
       "UgCode\\Datatables\\": "src/"
     }
-  }
+  },
+  "minimum-stability": "stable"
+
 }
