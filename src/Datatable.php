@@ -1,13 +1,11 @@
 <?php
 
-namespace Libraries\Helper;
+namespace UgCode\Datatables;
 
-use App\Models\ModelBase;
 
-class Datatable
+class Datatables
 {
     public static $request;
-    /** @var ModelBase */
     public static $query;
     public static $records_total;
     public static $records_filtered;
@@ -15,7 +13,6 @@ class Datatable
     static function make($model)
     {
         self::$request = $_POST;
-        /** @var $model ModelBase */
         self::$query = $model;
 
         self::setRecordsTotal();
@@ -39,7 +36,6 @@ class Datatable
             self::$query->where(function($query) {
                 foreach (self::$request['columns'] as $column) {
                     if ($column['searchable'] == 'true') {
-                        /** @var ModelBase $query */
                         $query->orWhere($column['name'], 'like', '%' . self::$request['search']['value'] . '%');
                     }
                 }
