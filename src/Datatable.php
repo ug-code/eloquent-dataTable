@@ -3,7 +3,7 @@
 namespace Ugcode\EloquentDatatable;
 
 
-class Datatables
+class Datatable
 {
     public static $request;
     public static $query;
