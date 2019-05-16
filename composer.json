@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "Ugcode\\EloquentDatatable": "src/"
+      "Ugcode\\EloquentDatatable\\": "src/"
     }
   },
   "minimum-stability": "stable"
