@@ -23,3 +23,8 @@ var table = $('#example').DataTable({
 } )
 });
 ```
+### Step 3: PHP 
+```PHP
+$db        =Employees->with(['users']);
+echo json_encode(Datatable::make($db));
+```
