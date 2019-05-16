@@ -1,0 +1,8 @@
+{
+    "require": {
+        "illuminate/database": "^5.8"
+    },
+    "require-dev": {
+        "ug-code/eloquent-datatable": "^1.0"
+    }
+}

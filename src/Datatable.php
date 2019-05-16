@@ -105,9 +105,9 @@ class Datatable
 
     }
 
-    static function debug()
+    static function setDebug($bool)
     {
-        return true;
+        return $bool;
     }
 
     static function getSqlWithBinding($query)
@@ -131,7 +131,7 @@ class Datatable
         $array['recordsFiltered'] = self::$records_filtered;
         $array['data']            = [];
 
-        if (self::debug()) {
+        if (self::$debug) {
             $array['sql'] = self::getSqlWithBinding(self::$query);
         }
         //print_r(self::$query->toSql());die();
