@@ -1,6 +1,6 @@
 <?php
 
-namespace Ugcode;
+namespace Ugcode\EloquentDatatable;
 
 
 class Datatables
