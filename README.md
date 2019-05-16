@@ -16,15 +16,15 @@ var table = $('#example').DataTable({
     "type": "POST"
   },
   "columns": [
-    { "user_id": "users.user_id" },
-    { "mail": "users.mail" },
-    { "address": "profiles.address" },
+    { data:"user_id": name:"users.user_id" },
+    { data:"mail": name:"users.mail" },
+    { data:"address": name:"profiles.address" },
   ]
 } )
 });
 ```
 ### Step 3: PHP 
 ```PHP
-$db        =Employees->with(['users']);
+$db        =Profiles::with(['users']);
 echo json_encode(Datatable::make($db));
 ```
