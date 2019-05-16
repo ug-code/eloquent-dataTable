@@ -19,7 +19,7 @@
   },
   "autoload": {
     "psr-4": {
-      "UgCode\\Datatables\\": "src/"
+      "UgCode\\": "src/"
     }
   },
   "minimum-stability": "stable"
